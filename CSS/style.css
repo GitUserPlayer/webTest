@@ -62,3 +62,21 @@ header a{
 #latest h3{
     margin-bottom: 60px;
 }
+
+.pics{ 
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    position:relative;
+}
+.pics img{ position:absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+ }
+ .pics img:last-child:hover{
+   /* 滑入時第一張透明度設0 */
+    opacity:0;}
